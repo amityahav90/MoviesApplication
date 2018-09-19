@@ -1,0 +1,10 @@
+<div class="container" *ngIf="movie !== undefined">
+    <div class="col-up">
+      <img src="{{ movie.imagePath }}">
+    </div>
+    <div class="col-down">
+      <h2>{{ movie.title }}</h2>
+      <p class="quote">{{ movie.description }}</p>
+    </div>
+  <a routerLink="/">Back to movie list</a>
+</div>
